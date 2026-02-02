@@ -4,7 +4,7 @@ import Topcontent from './components/topcontent'
 import './App.css'
 import About from './components/about'
 import Contact from './components/contact'
-import Footer from './components/footer'
+import Help from './components/help'
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
      <Topcontent />
      <About />
      <Contact />
-     <Footer />
+     <Help />
      
     </div>
   )
