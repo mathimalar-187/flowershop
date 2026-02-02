@@ -1,0 +1,85 @@
+
+/* ========== DESKTOP (default) ========== */
+/* No media query = large screen */
+
+
+/* ========== LAPTOP ========== */
+@media (max-width: 1200px){
+    .container{
+        width: 95%;
+    }
+
+    .navbar{
+        padding: 15px 30px;
+    }
+}
+
+
+/* ========== TABLET ========== */
+@media (max-width: 992px){
+
+    .navbar ul{
+        gap: 25px;
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img{
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ========== MOBILE ========== */
+@media (max-width: 768px){
+
+    .navbar{
+        padding: 12px 20px;
+    }
+
+    .navbar ul{
+        display: none; /* hamburger use panna */
+    }
+
+    .hero h1{
+        font-size: 32px;
+    }
+
+    .hero p{
+        font-size: 15px;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .shop-btn{
+        padding: 12px 28px;
+        font-size: 14px;
+    }
+}
+
+
+/* ========== SMALL MOBILE ========== */
+@media (max-width: 480px){
+
+    .hero h1{
+        font-size: 26px;
+    }
+
+    .navbar{
+        padding: 10px 15px;
+    }
+
+    .shop-btn{
+        width: 100%;
+    }
+}

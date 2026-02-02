@@ -1,0 +1,21 @@
+.nav{
+    background-color: orange;
+    list-style: none;        
+   display: flex;          
+   gap: 30px;            
+   justify-content: center;
+   font-size: larger;
+   padding: 20px;
+   cursor: pointer;
+   overflow: hidden;
+}
+.nav > li {
+    color: black;
+    font-family: sans-serif;
+}
+.nav > li:hover{
+    color: white;
+}
+.nav:hover{
+    background-color: rgb(255, 165, 0);
+}

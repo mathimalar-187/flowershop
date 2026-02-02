@@ -1,0 +1,69 @@
+.topcontent{
+    background: url(../assets/flw2.jpg);
+   height: 45rem;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.topcontent > h1{
+    position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-30%, -30%);
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px black;
+}
+.topcontent > h3{
+    position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-30%, -30%);
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px black;
+}
+.shop-btn{
+  position: absolute;
+  top: 75%;
+  left: 35%;
+  color: white;
+  border-radius: 5px;
+  background-color: orange;
+  font-size: 25px;
+overflow: hidden;
+cursor: pointer;
+letter-spacing: 1px;
+outline-color: #fdfbfc;
+}
+.shop-btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+    transform: skewX(-20deg);
+    transition: 0.6s;
+    
+}
+
+.shop-btn:hover::before{
+    left: 100%;
+}
+
+/* Hover effect */
+.shop-btn:hover{
+    background: linear-gradient(135deg,rgb(250, 163, 1),rgb(214, 141, 5));
+    box-shadow: 0 0 30px rgba(250, 163, 1);
+    transform: scale(1.05);
+}
+
+/* Click */
+.shop-btn:active{
+    transform: scale(0.95);
+}
+
