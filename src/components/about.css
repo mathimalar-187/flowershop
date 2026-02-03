@@ -43,3 +43,29 @@
 .cart-card button:hover {
   background:rgb(249, 204, 2);
 }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .cart-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 15px;
+  }
+  .cart-card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-container {
+    grid-template-columns: 1fr;
+    padding: 12px;
+    gap: 12px;
+  }
+  .cart-card img {
+    height: 200px;
+  }
+  .cart-card h3 {
+    font-size: 1rem;
+  }
+}

@@ -19,3 +19,30 @@
 .nav:hover{
     background-color: rgb(255, 165, 0);
 }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 992px) {
+  .nav {
+    gap: 20px;
+    padding: 18px 15px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    gap: 15px;
+    padding: 15px 12px;
+    font-size: 0.95rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    gap: 12px;
+    padding: 12px 10px;
+    font-size: 0.9rem;
+  }
+}

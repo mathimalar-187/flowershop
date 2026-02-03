@@ -1,9 +1,11 @@
 .topcontent{
+    position: relative;
     background: url(../assets/flw2.jpg);
    height: 45rem;
    width: 100%;
    background-repeat: no-repeat;
    background-size: cover;
+   background-position: center;
 }
 .topcontent > h1{
     position: absolute;
@@ -29,14 +31,83 @@
   position: absolute;
   top: 75%;
   left: 35%;
+  transform: translateX(-35%);
   color: white;
   border-radius: 5px;
   background-color: orange;
   font-size: 25px;
+  padding: 12px 28px;
 overflow: hidden;
 cursor: pointer;
 letter-spacing: 1px;
 outline-color: #fdfbfc;
+}
+
+/* ========== TABLET ========== */
+@media (max-width: 992px) {
+  .topcontent {
+    height: 35rem;
+  }
+  .topcontent > h1 {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    text-align: center;
+  }
+  .topcontent > h3 {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    text-align: center;
+  }
+  .shop-btn {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+  }
+}
+
+/* ========== MOBILE ========== */
+@media (max-width: 768px) {
+  .topcontent {
+    height: 28rem;
+  }
+  .topcontent > h1 {
+    top: 45%;
+    font-size: 26px;
+    padding: 0 15px;
+  }
+  .topcontent > h3 {
+    top: 55%;
+    font-size: 18px;
+    padding: 0 15px;
+  }
+  .shop-btn {
+    top: 72%;
+    font-size: 16px;
+    padding: 10px 24px;
+  }
+}
+
+/* ========== SMALL MOBILE ========== */
+@media (max-width: 480px) {
+  .topcontent {
+    height: 24rem;
+  }
+  .topcontent > h1 {
+    font-size: 22px;
+  }
+  .topcontent > h3 {
+    font-size: 16px;
+  }
+  .shop-btn {
+    width: 80%;
+    max-width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    padding: 10px 20px;
+  }
 }
 .shop-btn::before{
     content: "";

@@ -73,3 +73,35 @@
     font-size: 2rem;
   }
 }
+
+@media (max-width: 480px) {
+  .help-container {
+    padding: 30px 12px;
+  }
+  
+  .help-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+  
+  .faq-section h3,
+  .contact-info h3 {
+    font-size: 1.25rem;
+  }
+  
+  .faq-item {
+    padding: 15px;
+  }
+  
+  .faq-item h4 {
+    font-size: 1rem;
+  }
+  
+  .contact-info {
+    padding: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+  }
+}
